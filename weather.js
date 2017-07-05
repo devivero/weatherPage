@@ -7,7 +7,7 @@ function handleSubmit () {
   event.preventDefault()
   console.log(form)
 
-  
+
   /*
   // get form values
   let values = {format: form.format.value}
@@ -34,10 +34,10 @@ function getWeather (queryString) {
 
     // debug = response
     weatherDiv.innerHTML =
-    "Temperature: " + Math.round(response.main.temp) + ' DEG F ' +
-    "| Low Temperature: " + Math.round(response.main.temp_min) + ' DEG F ' +
-    "| High Temperature: " + Math.round(response.main.temp_max) + ' DEG F ' +
-    "| Humidity: " + response.main.humidity + '%'
+    "Temperature: " + Math.round(response.main.temp) + ' F ' +
+    " | Low Temperature: " + Math.round(response.main.temp_min) + ' F ' +
+    " | High Temperature: " + Math.round(response.main.temp_max) + ' F ' +
+    " | Humidity: " + response.main.humidity + '%'
   }
 
   // fires if something goes wrong
