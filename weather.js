@@ -23,16 +23,17 @@ function geolocError(){
 
 function getWeather (queryString) {
   let request = new XMLHttpRequest()
+  let location = queryString
 
   if (queryString == "seattle"){
-    queryString = "lat=47.6762&lon=-122.3182&units=imperial&APPID=32f2896d2c86b6cab0880ccfda804d0c"
+    location = "lat=47.6762&lon=-122.3182&units=imperial&APPID=32f2896d2c86b6cab0880ccfda804d0c"
   } else if (queryString == "london"){
-    queryString = "lat=51.5074&lon=0.1278&units=imperial&APPID=32f2896d2c86b6cab0880ccfda804d0c"
-  }
+    location = "lat=51.5074&lon=0.1278&units=imperial&APPID=32f2896d2c86b6cab0880ccfda804d0c"
+  } 
 
   // starts talk to API - 3 params
   // request method, url, (optional) async flag (default true)
-  request.open("GET", apiURL + queryString, true)
+  request.open("GET", apiURL + location, true)
 
   // fires when the request is complete
   // long term - I want to update the DOM
