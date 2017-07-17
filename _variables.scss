@@ -1,0 +1,16 @@
+//$black: #111;
+$sky-blue: rgb(135,206,250);
+
+$margins: 5% auto;
+$button-box-size: 100%;
+
+$button-map: (
+  // regular bg, hover bg, active bg
+  c: (#3e181b, #661920, #db1d2d),
+  d: (#422018, #6e2819, #f0421c),
+  e: (#45391b, #735b20, #fec02d),
+  f: (#193c29, #1b613b, #20d071),
+  g: (#18323e, #184d65, #1a9ddb),
+  a: (#331f35, #4e2753, #a13fad),
+  b: (#43293d, #6f3a62, #f26fd4)
+)

@@ -4,13 +4,22 @@
   <head>
     <meta charset="utf-8">
     <title>Weather Map</title>
+    <link href="//fonts.googleapis.com/css?family=Carrois Gothic" rel='stylesheet'>
+    <link href="//fonts.googleapis.com/css?family=Merriweather" rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <header>
+      <img src="images/giraffe-weather-forecast.jpg" alt="a dog asking what is the weather like today?">
+    </header>
+    <p>
     <div id="weather"></div>
     <p>
-    <button type="button" onclick="getWeather('seattle')">Get Seattle Weather!</button>
-    <button type="button" onclick="getWeather('london')">Get London Weather!</button>
-    <button type="button" onclick="wow()">Get Your Weather!</button>
+    <div class="buttons">
+      <button class="button a" type="button" onclick="getWeather('seattle')">Get Seattle Weather!</button>
+      <button class="button b" type="button" onclick="getWeather('london')">Get London Weather!</button>
+      <button class="button c" type="button" onclick="wow()">Get Your Weather!</button>
+    </div>
 
     <script type="text/javascript" src="weather.js"></script>
   </body>
